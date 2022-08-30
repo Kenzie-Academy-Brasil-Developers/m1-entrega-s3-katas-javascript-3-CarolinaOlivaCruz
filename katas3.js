@@ -1,5 +1,6 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
+
 function kata1() {
 
     let listNum = [];
@@ -165,7 +166,7 @@ console.log(kata8());
 
 let divisivel5 = [];
 
-function listaDivisiveis5(){
+function listaDivisiveis5() {
 
     for (let i = 1; i <= 100; i++) {
         let numAtual = i;
@@ -179,9 +180,9 @@ console.log(listaDivisiveis5());
 
 
 function kata9(lista) {
-    
+
     let divisivel5Impar = [];
-    
+
     for (let i = 0; i < lista.length; i++) {
 
         let numNovo = lista[i];
@@ -191,47 +192,163 @@ function kata9(lista) {
         }
     }
     return divisivel5Impar;
- }
- console.log(kata9(divisivel5));
-
-
-
-
-function kata10() {
-    // implemente o código do kata 10 aqui
 }
+console.log(kata9(divisivel5));
 
-function kata11() {
-    // implemente o código do kata 11 aqui
-}
 
-function kata12() {
-    // implemente o código do kata 12 aqui
-}
 
-function kata13() {
-    // implemente o código do kata 13 aqui
+
+function kata10(lista) {
+    return sampleArray;
 }
+console.log(kata10(sampleArray));
+
+
+
+
+
+
+function kata11(lista) {
+    let numPares = [];
+
+    for (i = 0; i < lista.length; i++) {
+        let listaAtual = lista[i];
+
+        if (listaAtual % 2 === 0) {
+            numPares.push(listaAtual);
+        }
+    }
+    return numPares;
+}
+console.log(kata11(sampleArray));
+
+
+
+
+
+
+function kata12(lista) {
+    let numPares = [];
+
+    for (i = 0; i < lista.length; i++) {
+        let listaAtual = lista[i];
+
+        if (listaAtual % 2 !== 0) {
+            numPares.push(listaAtual);
+        }
+    }
+    return numPares;
+}
+console.log(kata12(sampleArray));
+
+
+
+
+
+
+
+
+function kata13(lista) {
+
+    let numPares = [];
+
+    for (i = 0; i < lista.length; i++) {
+        let listaAtual = lista[i];
+
+        if (listaAtual % 8 === 0) {
+            numPares.push(listaAtual);
+        }
+    }
+    return numPares;
+}
+console.log(kata13(sampleArray));
+
+
+
+
 
 function kata14() {
     // implemente o código do kata 14 aqui
 }
 
-function kata15() {
-    // implemente o código do kata 15 aqui
-}
 
-function kata16() {
-    // implemente o código do kata 16 aqui
-}
 
-function kata17() {
-    // implemente o código do kata 17 aqui
-}
 
-function kata18() {
-    // implemente o código do kata 18 aqui
+function kata15(numeroLista) {
+
+    contador = 0;
+
+    for (i = 1; i <= numeroLista; i++) {
+
+        contador += i;
+
+    }
+    return contador;
 }
+console.log(kata15(20));
+
+
+
+
+function kata16(lista) {
+
+    contador = 0;
+
+    for (i = 0; i < lista.length; i++) {
+
+        contador += lista[i];
+
+    }
+    return contador;
+
+
+}
+console.log(kata16(sampleArray));
+
+
+
+
+
+
+function kata17(lista) {
+
+    let verificaMenor = lista[0];
+
+    for (i = 0; i < lista.length; i++) {
+
+        if (lista[i] < verificaMenor) {
+    
+            verificaMenor = lista[i];
+        }
+    }
+
+    return verificaMenor;
+}
+console.log(kata17(sampleArray));
+
+
+
+
+
+
+function kata18(lista) {
+    
+    let verificaMaior = lista[0];
+    
+
+    for(i = 0; i < lista.length; i++){
+
+        if(lista[i] > verificaMaior){
+
+            verificaMaior = lista[i];
+        } 
+    }
+    return verificaMaior;
+
+}
+console.log(kata18(sampleArray));
+
+
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
