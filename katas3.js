@@ -29,7 +29,9 @@ function kata2() {
 } console.log(kata2())
 
 
-//
+
+
+// Function Extra;
 
 function positivoForNegativo(num) {
 
@@ -72,29 +74,29 @@ function kata4() {
 
 
 
-//
+// Não consegui //
 
-function kata5() {
-    let listNum = [];
-    let listaImpar = [];
+// function kata5() {
+//     let listNum = [];
+//     let listaImpar = [];
 
-    for (let i = 25; i >= 1; i--) {
-        let negativo = positivoForNegativo(i)
-        listNum.push(negativo)
-    }
+//     for (let i = 25; i >= 1; i--) {
+//         let negativo = positivoForNegativo(i)
+//         listNum.push(negativo)
+//     }
 
-    for (let i = 1; i <= 25; i++) {
+//     for (let i = 1; i <= 25; i++) {
 
-        listNum.push(i)
-    }
+//         listNum.push(i)
+//     }
 
-    if (listNum % 2 === 1) {
-        listaImpar.push(listNum)
-    }
-    return listaImpar;
+//     if (listNum % 2 === 1) {
+//         listaImpar.push(listNum)
+//     }
+//     return listaImpar;
 
-}
-console.log(kata5())
+// }
+// console.log(kata5())
 
 
 
@@ -162,6 +164,7 @@ console.log(kata8());
 
 
 
+
 //
 
 let divisivel5 = [];
@@ -177,6 +180,11 @@ function listaDivisiveis5() {
     return divisivel5;
 }
 console.log(listaDivisiveis5());
+
+
+
+
+//
 
 
 function kata9(lista) {
@@ -198,6 +206,8 @@ console.log(kata9(divisivel5));
 
 
 
+
+//
 function kata10(lista) {
     return sampleArray;
 }
@@ -207,7 +217,7 @@ console.log(kata10(sampleArray));
 
 
 
-
+//
 function kata11(lista) {
     let numPares = [];
 
@@ -226,7 +236,7 @@ console.log(kata11(sampleArray));
 
 
 
-
+//
 function kata12(lista) {
     let numPares = [];
 
@@ -246,7 +256,7 @@ console.log(kata12(sampleArray));
 
 
 
-
+//
 
 function kata13(lista) {
 
@@ -265,12 +275,19 @@ console.log(kata13(sampleArray));
 
 
 
+//
 
+function kata14(lista) {
 
-function kata14() {
-    // implemente o código do kata 14 aqui
+    let listaQuadrado = [];
+
+    for (i = 0; i < lista.length; i++) {
+
+        listaQuadrado.push(lista[i] * lista[i]);
+    }
+    return listaQuadrado;
 }
-
+console.log(kata14(sampleArray))
 
 
 
@@ -289,6 +306,7 @@ console.log(kata15(20));
 
 
 
+//
 
 function kata16(lista) {
 
@@ -309,7 +327,7 @@ console.log(kata16(sampleArray));
 
 
 
-
+//
 function kata17(lista) {
 
     let verificaMenor = lista[0];
@@ -317,7 +335,7 @@ function kata17(lista) {
     for (i = 0; i < lista.length; i++) {
 
         if (lista[i] < verificaMenor) {
-    
+
             verificaMenor = lista[i];
         }
     }
@@ -330,18 +348,18 @@ console.log(kata17(sampleArray));
 
 
 
-
+//
 function kata18(lista) {
-    
+
     let verificaMaior = lista[0];
-    
 
-    for(i = 0; i < lista.length; i++){
 
-        if(lista[i] > verificaMaior){
+    for (i = 0; i < lista.length; i++) {
+
+        if (lista[i] > verificaMaior) {
 
             verificaMaior = lista[i];
-        } 
+        }
     }
     return verificaMaior;
 
