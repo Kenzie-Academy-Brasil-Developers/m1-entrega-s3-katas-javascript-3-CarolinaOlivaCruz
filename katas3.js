@@ -74,29 +74,21 @@ function kata4() {
 
 
 
-// Não consegui //
+// 
 
-// function kata5() {
-//     let listNum = [];
-//     let listaImpar = [];
+function kata5() {
+   
+    let listaImpar = [];
 
-//     for (let i = 25; i >= 1; i--) {
-//         let negativo = positivoForNegativo(i)
-//         listNum.push(negativo)
-//     }
-
-//     for (let i = 1; i <= 25; i++) {
-
-//         listNum.push(i)
-//     }
-
-//     if (listNum % 2 === 1) {
-//         listaImpar.push(listNum)
-//     }
-//     return listaImpar;
-
-// }
-// console.log(kata5())
+    for (let i = 25; i >= -25; i--) {
+        
+        if(i % 2 !== 0){
+            listaImpar.push(i);
+        }
+    }
+return listaImpar;
+}
+console.log(kata5())
 
 
 
@@ -262,7 +254,7 @@ function kata13(lista) {
 
     let numPares = [];
 
-    for (i = 0; i < lista.length; i++) {
+    for (let i = 0; i < lista.length; i++) {
         let listaAtual = lista[i];
 
         if (listaAtual % 8 === 0) {
@@ -281,7 +273,7 @@ function kata14(lista) {
 
     let listaQuadrado = [];
 
-    for (i = 0; i < lista.length; i++) {
+    for (let i = 0; i < lista.length; i++) {
 
         listaQuadrado.push(lista[i] * lista[i]);
     }
@@ -295,7 +287,7 @@ function kata15(numeroLista) {
 
     contador = 0;
 
-    for (i = 1; i <= numeroLista; i++) {
+    for (let i = 1; i <= numeroLista; i++) {
 
         contador += i;
 
@@ -312,7 +304,7 @@ function kata16(lista) {
 
     contador = 0;
 
-    for (i = 0; i < lista.length; i++) {
+    for (let i = 0; i < lista.length; i++) {
 
         contador += lista[i];
 
@@ -332,7 +324,7 @@ function kata17(lista) {
 
     let verificaMenor = lista[0];
 
-    for (i = 0; i < lista.length; i++) {
+    for (let i = 0; i < lista.length; i++) {
 
         if (lista[i] < verificaMenor) {
 
@@ -354,7 +346,7 @@ function kata18(lista) {
     let verificaMaior = lista[0];
 
 
-    for (i = 0; i < lista.length; i++) {
+    for (let i = 0; i < lista.length; i++) {
 
         if (lista[i] > verificaMaior) {
 
